@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  ssr: false,
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/eslint-module"],
   // https://tailwindcss.nuxtjs.org/getting-started/options
   tailwindcss: {

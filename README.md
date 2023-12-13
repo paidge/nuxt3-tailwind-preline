@@ -1,75 +1,21 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Starter Kit with Preline-UI (Tailwind) and Prettier/ESlint
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- Look at the [Preline documentation](https://preline.co/docs/index.html) to learn more.
 
-## Setup
+## Preline-UI
 
-Make sure to install the dependencies:
+This library offers hundreds of component examples crafted with [Tailwind](https://tailwindcss.com/), dark mode and other possibilities. Thanks to this repo Preline-UI is already integrated in your [Nuxt3](https://nuxt.com/docs/getting-started/introduction) project.
 
-```bash
-# npm
-npm install
+This repo depends on [@nuxtjs/tailwindcss](https://tailwindcss.nuxtjs.org/). You can customize Tailwind in the `./assets/css/tailwind.config.js` file and access to the [Tailwind Viewer](https://tailwindcss.nuxtjs.org/tailwind/viewer)
 
-# pnpm
-pnpm install
+> to quickly visualize your Tailwind configuration with easy copy-pasting.
 
-# yarn
-yarn install
+## Formatter and Linter
 
-# bun
-bun install
-```
+### 1. Formatter (Prettier)
 
-## Development Server
+[Prettier](https://prettier.io/) is used to format the code and since we are using Tailwind, the [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) package is included so that Tailwind classes are automatically sorted. You can customize the formatter in the `.prettierrc` file.
 
-Start the development server on `http://localhost:3000`:
+### 2. Linter (ESlint)
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Since we are in a Nuxt Project, the [@nuxtjs/eslint-module](https://github.com/nuxt-modules/eslint) package is included. This one is using [@nuxt/eslint-config](https://github.com/nuxt/eslint-config). You can customize the linter in the `.eslintrc` file.

@@ -1,5 +1,4 @@
-/** @type {import('tailwindcss').Config} */
-const srcDir = '.';
+const srcDir = ".";
 export default {
   content: [
     `${srcDir}/components/**/*.{vue,js,ts}`,
@@ -13,14 +12,10 @@ export default {
     `${srcDir}/Error.{js,ts,vue}`,
     `${srcDir}/error.{js,ts,vue}`,
     `${srcDir}/app.config.{js,ts}`,
-    './node_modules/preline/preline.js'
+    "./node_modules/preline/preline.js"
   ],
   theme: {
-    extend: {},
+    extend: {}
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('preline/plugin')
-  ],
-}
-
+  plugins: [require("@tailwindcss/forms"), require("preline/plugin")]
+};
