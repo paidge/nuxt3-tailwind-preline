@@ -5,7 +5,7 @@ declare const HSStaticMethods: {
 };
 
 export default defineNuxtPlugin(nuxtApp => {
-  nuxtApp.hook("page:finish", () => {
+  nuxtApp.hook("app:suspense:resolve", () => {
     HSStaticMethods.autoInit();
   });
 });
